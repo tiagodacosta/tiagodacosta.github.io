@@ -1,9 +1,21 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="container">
+	<div class="row clearfix">
+    <div class="column single">
+		<div class="cabecalho">
+			<h1 class="left">Desenhos para colorir<span class="draw-title">{{ page.title }}</span></h1>
+			<button class="green right">Imprimir desenho</button>
+		</div>
+		<div class="desenho">
+			{{ content }}
+		</div>
+		<div class="nav-images">
+			<button class="blue left">Desenho anterior</button>
+			<button class="blue right">Próximo desenho</button>
+		</div>
+    </div>
+	</div>
 </div>
