@@ -208,7 +208,7 @@ h1{
   overflow: auto
 }
 
-button{
+.btn{
   font-size:1rem;
   color:#fff;
   -webkit-border-radius: 4;
@@ -219,14 +219,15 @@ button{
   font-family: 'Fredoka One', cursive;
   letter-spacing: 0.05rem;
   border:none;
+  text-decoration: none;
 }
 
-button:hover{
+.btn:hover{
   cursor:pointer;
   text-shadow: 0px 0px 5px #fdffb5;
 }
 
-button:active{
+.btn:active{
   border-top: 4px solid #fff;
   border-bottom:none;
 }
@@ -241,7 +242,7 @@ button:active{
   border-bottom: 4px solid #2980b9;
 }
 
-.cabecalho button{
+.cabecalho .btn{
   margin-top: 1rem;
 }
 

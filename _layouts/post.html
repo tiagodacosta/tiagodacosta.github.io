@@ -7,14 +7,14 @@ layout: default
     <div class="column single">
 		<div class="cabecalho">
 			<h1 class="left">Desenhos para colorir<span class="draw-title">{{ page.title }}</span></h1>
-			<button class="green right">Imprimir desenho</button>
+			<a href="javascript:window.print()" class="btn green right">Imprimir desenho</a>
 		</div>
 		<div class="desenho">
 			{{ content }}
 		</div>
 		<div class="nav-images">
-			<button class="blue left">Desenho anterior</button>
-			<button class="blue right">Próximo desenho</button>
+			<a href="#" class="btn blue left">Desenho anterior</a>
+			<a href="#" class="btn blue right">Próximo desenho</a>
 		</div>
     </div>
 	</div>
