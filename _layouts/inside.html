@@ -2,22 +2,8 @@
 layout: default
 ---
 
-<div class="navbar">
-	<div class="container">
-		<div class="logo">
-			<img src="/img/aprender-colorir-cabecalho.png">
-			<a href="/index.html" class="logo">Aprender e colorir</a>
-		</div>
-	</div>
-</div>
+{% include navbar.html %}
 
 {{ content }}
 
-<div class="footer">
-	<div class="container">
-	  <p>
-	    Aprender e colorir<br />
-	    Desenhos por Tiago da Costa
-	  </p>
-	</div>
-</div>
+{% include footer.html %}

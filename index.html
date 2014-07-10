@@ -1,18 +1,24 @@
 ---
-layout: inside
+layout: default
+title: Aprender e Colorir
 ---
 
+<div class="logo-home">Aprender e colorir</div>
+
 <div id="home">
-  <div class="container home">
-    <h1>Blog Posts</h1>
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li>
-          <span>{{ post.date | date_to_string }}</span> &raquo;
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <img src="{{ post.img }}">
-        </li>
+  <div class="container principal">
+    <h1>Desenhos para imprimir e pintar enquanto aprende as primeiras palavras em inglês!</h1>
+    <ul class="categories">
+      {% for category in site.categories %}
+      <li>
+        <a href="categories/{{ category[0] }}.html">{{ category[0] | capitalize }}</a>
+        <img src="{{ category[1].first.img }}">
+      </li>
       {% endfor %}
     </ul>
   </div>
 </div>
+
+{{ content }}
+
+{% include footer.html %}

@@ -3,7 +3,8 @@ layout: post
 title:  "car"
 date:   2014-04-11 15:38:47
 img: /img/desenho-colorir-bicycle.gif
-categories: transportes
+categories: objects
 ---
 
 ![Desenhos para colorir: Bicycle]({{ page.img }})
+<p>BLALALA</p>
