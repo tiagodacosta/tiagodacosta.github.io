@@ -160,6 +160,28 @@ body{
   float:right;
 }
 
+/*HOME*/
+
+.principal h1{
+  text-align: center;
+  color: #666;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.logo-home{
+  line-height: 6rem;
+  font-size:4rem;
+  color:#000;
+  text-align: center;
+  margin:3rem 0 2rem;
+  letter-spacing: -0.1rem;
+}
+
+/**/
+
 .navbar{
   background-color: #000;
   height: 4rem;
