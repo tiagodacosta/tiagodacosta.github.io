@@ -2,25 +2,24 @@
 layout: default
 title: Aprender e Colorir
 ---
+{% include ads.html %}
 
 <div class="logo-home">Aprender e colorir</div>
 
-<div id="home">
   <div class="container principal">
     <h1>Desenhos para colorir e aprender as primeiras palavras em inglês!</h1>
-    <ul class="categories">
-      {% for category in site.categories %}
-      <li>
-        <a href="categories/{{ category[0] }}.html">
-          <p>{{ category[0] | capitalize }}</p>
-          <img src="{{ category[1].first.img }}">
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+    <div class="column full">
+      <ul class="categories">
+        {% for category in site.categories %}
+        <li class="column half">
+          <a href="categories/{{ category[0] }}.html">
+            <p>{{ category[0] | capitalize }}</p>
+            <img src="{{ category[1].first.img }}">
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
-</div>
-
-{{ content }}
 
 {% include footer.html %}

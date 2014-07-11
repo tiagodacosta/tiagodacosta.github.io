@@ -180,7 +180,6 @@ body{
   letter-spacing: -0.1rem;
 }
 
-
 ul.categories li{
   list-style: none;
 }
@@ -215,8 +214,15 @@ ul.categories p{
 
 /**/
 
+/*ADS*/
+
+.logo-home{
+  background-color: red;
+  height: 3rem;
+}
+
 .navbar{
-  background-color: #000;
+  background-color: #333;
   height: 4rem;
 }
 
@@ -308,7 +314,7 @@ h1{
 
 
 .footer{
-  margin-top: 1rem;
+  margin-top: 3rem;
   padding: 1rem 0;
   background-color: #eee;
 }
