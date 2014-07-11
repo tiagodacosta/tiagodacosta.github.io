@@ -180,6 +180,39 @@ body{
   letter-spacing: -0.1rem;
 }
 
+
+ul.categories li{
+  list-style: none;
+}
+
+ul.categories a{
+  border: 4px solid #fff;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3498db;
+  text-decoration: none;
+  display: block;
+}
+
+ul.categories a:hover{
+  background-color: #eee;
+  border-color: #3498db;
+  text-decoration: none;
+}
+
+ul.categories img{
+  background-color: #FFF;
+  width: 100%;
+}
+
+ul.categories p{
+  margin-bottom: 1rem;
+}
+
+
+.
+
 /**/
 
 .navbar{
@@ -275,6 +308,7 @@ h1{
 
 
 .footer{
+  margin-top: 1rem;
   padding: 1rem 0;
   background-color: #eee;
 }

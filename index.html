@@ -7,12 +7,14 @@ title: Aprender e Colorir
 
 <div id="home">
   <div class="container principal">
-    <h1>Desenhos para imprimir e pintar enquanto aprende as primeiras palavras em inglês!</h1>
+    <h1>Desenhos para colorir e aprender as primeiras palavras em inglês!</h1>
     <ul class="categories">
       {% for category in site.categories %}
       <li>
-        <a href="categories/{{ category[0] }}.html">{{ category[0] | capitalize }}</a>
-        <img src="{{ category[1].first.img }}">
+        <a href="categories/{{ category[0] }}.html">
+          <p>{{ category[0] | capitalize }}</p>
+          <img src="{{ category[1].first.img }}">
+        </a>
       </li>
       {% endfor %}
     </ul>
