@@ -125,6 +125,7 @@ html { font-size: 100%; }
   .column.two-thirds { width: 66.7%; }
   .column.half { width: 50%; }
   .column.third { width: 33.3%; }
+  .column.three-fourths { width: 75.05%; }
   .column.fourth { width: 24.95%; }
   .column.flow-opposite { float: right; }
 }
@@ -160,6 +161,16 @@ body{
   float:right;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 90%;
+}
+
+h1{
+  font-size: 3rem;
+}
+
 /*HOME*/
 
 .principal h1{
@@ -171,7 +182,7 @@ body{
   margin-bottom: 3rem;
 }
 
-.logo-home{
+.principal div.logo{
   line-height: 6rem;
   font-size:4rem;
   color:#000;
@@ -180,46 +191,52 @@ body{
   letter-spacing: -0.1rem;
 }
 
-ul.categories li{
+/*THUMBS*/
+
+ul.thumbs li{
   list-style: none;
 }
 
-ul.categories a{
-  border: 4px solid #fff;
+ul.thumbs a{
   padding: 2rem;
   font-size: 2rem;
   text-align: center;
   color: #3498db;
   text-decoration: none;
   display: block;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+
 }
 
-ul.categories a:hover{
-  background-color: #eee;
-  border-color: #3498db;
-  text-decoration: none;
+ul.thumbs a:hover{
+  background-color: #3498db;
+  color:#FFF;  
 }
 
-ul.categories img{
+ul.thumbs img{
   background-color: #FFF;
   width: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
 }
 
-ul.categories p{
+ul.thumbs p{
   margin-bottom: 1rem;
 }
 
 
-.
-
-/**/
-
 /*ADS*/
 
-.logo-home{
-  background-color: red;
-  height: 3rem;
+.ads{
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
 }
+
+/*NAVBAR*/
 
 .navbar{
   background-color: #333;
@@ -243,25 +260,14 @@ ul.categories p{
 }
 
 
-
-.container {
-  margin: 0 auto;
-  max-width: 48rem;
-  width: 90%;
-}
-
-h1{
-  font-size: 1rem;
+.cabecalho{
+  margin:2rem 0;
+  text-align: center;
 }
 
 .draw-title{
-  font-size: 2rem;
+  font-size: 1rem;
   display: block;
-}
-
-.cabecalho{
-  margin:2rem 0;
-  overflow: auto
 }
 
 .nav-images{
@@ -316,5 +322,7 @@ h1{
 .footer{
   margin-top: 3rem;
   padding: 1rem 0;
-  background-color: #eee;
+  background-color: #ddd;
+  float:left;
+  width: 100%;
 }
