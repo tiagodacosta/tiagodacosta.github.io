@@ -1,8 +1,18 @@
 <div class="footer">
 	<div class="container">
-	  <p>
-	    Aprender e colorir<br />
-	    Desenhos por Tiago da Costa
-	  </p>
+		<div class="row clearfix">
+			<div class="column third">
+				<p>
+					Aprender e colorir<br />
+					Desenhos por Tiago da Costa
+				</p>
+			</div>
+			<div class="column third">
+				<p>Desenhos:</p>
+				{% for category in site.categories %}
+					<a href="categories/{{ category[0] }}.html"><p>{{ category[0] | capitalize }}</p></a>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </div>
